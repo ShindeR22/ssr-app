@@ -27,7 +27,7 @@ export default function Providers({ children }: ProvidersProps) {
         return (
                 <Provider>
                         <QueryClientProvider client={queryClientRef.current}>
-                                <ThemeProvider>
+                                <ThemeProvider >
                                         {children}
                                 </ThemeProvider>
                         </QueryClientProvider>
