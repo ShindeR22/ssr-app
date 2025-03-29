@@ -6,7 +6,7 @@ import type { PostResponse, PostRequest } from '@/lib/validators/posts';
 
 export const postsParamsAtom = atom<PostRequest>({
         limit: 10,
-        skip: 0,
+        skip: 1,
 });
 
 export const postsAtom = atomWithQuery<PostResponse>((get) => ({
@@ -16,4 +16,4 @@ export const postsAtom = atomWithQuery<PostResponse>((get) => ({
                 return fetchPosts(params);
         },
 }));
-console.log("postsAtom", postsAtom);
+// console.log("postsAtom", postsAtom);
