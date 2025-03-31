@@ -1,9 +1,10 @@
 "use client";
 // import PostsPage from "@/components/postspage";
 import Navbar from "@/components/navbar";
+import PostsPage from "@/components/postspage";
 // import { useEffect } from "react";
 // import { user } from "@/lib/api/user";
-import UserPage from "@/components/user";
+// import UserPage from "@/components/user";
 // import { fetchUsers } from "@/path/to/your/api"; // adjust the import path accordingly
 
 export default function Home() {
@@ -24,8 +25,8 @@ export default function Home() {
 
     <div className=""  >
       <Navbar />
-      <UserPage />
-      {/* <PostsPage /> */}
+      {/* <UserPage /> */}
+      <PostsPage />
     </div>
   );
 }

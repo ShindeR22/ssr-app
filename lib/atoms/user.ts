@@ -24,5 +24,5 @@ export const users = atomWithInfiniteQuery(() => ({
         getNextPageParam: (lastPage) => {
                 return lastPage.pagination.hasNextPage ? lastPage.pagination.nextPage : null;
         },
-        initialPageParam: 1,
+        initialPageParam: 2,
 }));

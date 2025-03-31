@@ -5,6 +5,9 @@ export const UserSchema = z.object({
         name: z.string(),
         image: z.string(),
         address: z.string(),
+        city: z.string(),
+        mobile: z.number(),
+        photographerType: z.string()
 });
 
 export const PaginationSchema = z.object({

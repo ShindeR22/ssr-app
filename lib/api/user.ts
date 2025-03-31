@@ -9,7 +9,7 @@ export async function user(params?: UsersRequest): Promise<UsersResponse> {
                 if (validatedParams.page) {
                         queryParams.append('page', validatedParams.page.toString());
                 }
-                const url = `api/user?${queryParams.toString()}`;
+                const url = `/api/user?${queryParams.toString()}`;
                 // console.log(`Fetching from: ${url}`);
                 const response = await fetch(url);
                 if (!response.ok) {
