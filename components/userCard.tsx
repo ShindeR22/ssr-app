@@ -13,15 +13,15 @@ type Post = {
     photographerType: string;
 };
 
-export default function UserCard({ post }: { post: Post }) {
+export default function UserCard({ userpost }: { userpost: Post }) {
     return (
         <div>
             <div className=" mx-auto  shadow-xl rounded-xl  transform hover:scale-105 transition duration-300 m">
                 <div className="p-6 bg-gray-300 rounded-xl">
                     <div className=" flex items-center">
                         <Image
-                            src={post.image}
-                            alt={post.name}
+                            src={userpost.image}
+                            alt={userpost.name}
                             width={150}
                             height={150}
                             className="rounded-full border-4 border-white shadow-md mb-4"
@@ -29,22 +29,22 @@ export default function UserCard({ post }: { post: Post }) {
                         <div className='m-4 '>
 
                             <h2 className="text-2xl font-bold text-gray-900 mb-2 " >
-                                {post.name}
+                                {userpost.name}
                             </h2>
                             <p className="text-gray-600 whitespace-pre-line">
-                                City-{post.city}
+                                City-{userpost.city}
                             </p>
                             <p className="text-gray-600 text-center whitespace-pre-line flex ">
                                 <MapPinned className="w-5 h-5 mr-2" />
-                                {post.address}
+                                {userpost.address}
                             </p>
                             <p className="text-gray-600 text-center whitespace-pre-line flex ">
                                 <PhoneCall className="w-5 h-5 mr-2" />
-                                {post.mobile}
+                                {userpost.mobile}
                             </p>
                             <p className="text-gray-600 text-center whitespace-pre-line flex ">
                                 <Camera className="w-5 h-5 mr-2" />
-                                {post.photographerType}
+                                {userpost.photographerType}
                             </p>
                         </div>
 

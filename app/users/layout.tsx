@@ -18,6 +18,7 @@ import Navbar from "@/components/navbar";
 //     variable: "--font-geist-mono",
 //     subsets: ["latin"],
 // });
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -29,15 +30,15 @@ export default async function Layout({ children, }: { children: React.ReactNode;
     // console.log("userdata", userdata)
 
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning={true}>
 
-            <body >
+            <body className="geist_e531dabc-module__QGiZLq__variable geist_mono_68a01160-module__YLcDdW_..." >
                 <Navbar />
 
                 <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4/5 mx-auto">
                     {userdata.users.map((user) => (
                         <div key={user.id} >
-                            <UserCard post={user} />
+                            <UserCard userpost={user} />
                         </div>
                     ))}
                 </div>

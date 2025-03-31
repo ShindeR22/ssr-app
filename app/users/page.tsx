@@ -64,7 +64,7 @@ export default function UserPage() {
 
                         return (
                             <div key={user.id} ref={isLastElement ? lastUserElementRef : null}>
-                                <UserCard post={user} />
+                                <UserCard userpost={user} />
                             </div>
                         );
                     })
