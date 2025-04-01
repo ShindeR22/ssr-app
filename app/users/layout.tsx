@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 import { user } from "@/lib/api/user";
 import "../globals.css";
 import UserCard from "@/components/userCard";
-import Navbar from "@/components/navbar";
+// import Navbar from "@/components/navbar";
+// import Footer from "@/components/ui/footer";
 // import Providers from "./providers";
 // import { Link } from "lucide-react";
 
@@ -33,7 +34,7 @@ export default async function Layout({ children, }: { children: React.ReactNode;
         <html lang="en" suppressHydrationWarning={true}>
 
             <body className="geist_e531dabc-module__QGiZLq__variable geist_mono_68a01160-module__YLcDdW_..." >
-                <Navbar />
+
 
                 <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4/5 mx-auto">
                     {userdata.users.map((user) => (
@@ -43,6 +44,7 @@ export default async function Layout({ children, }: { children: React.ReactNode;
                     ))}
                 </div>
                 {children}
+
             </body>
         </html>
     );

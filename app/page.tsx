@@ -1,6 +1,5 @@
 "use client";
 // import PostsPage from "@/components/postspage";
-import Navbar from "@/components/navbar";
 import PostsPage from "@/components/postspage";
 // import { useEffect } from "react";
 // import { user } from "@/lib/api/user";
@@ -24,7 +23,6 @@ export default function Home() {
   return (
 
     <div className=""  >
-      <Navbar />
       {/* <UserPage /> */}
       <PostsPage />
     </div>
