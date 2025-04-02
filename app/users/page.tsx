@@ -55,7 +55,7 @@ export default function UserPage() {
 
     return (
         <div>
-            <main className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4/5 mx-auto">
+            <main className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4/5 mx-auto ">
                 {data?.pages.map((page, pageIndex) =>
                     page.users.map((user, userIndex) => {
                         const isLastElement =
@@ -102,6 +102,7 @@ export default function UserPage() {
                     </div>
                 </div>
             )}
+
         </div>
     );
 }
